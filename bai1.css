@@ -1,67 +1,105 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #fdf8f8;
+    width: 100%;
 
 }
 
 .header {
-    width: 100%;
-    height: 80px;
-    display: block;
-    text-align: center;
-    background-color: #71cf76;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: lightgreen;
 }
 
 .container {
     display: block;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin: 40px 40px 40px 40px;
+    padding: 20px;
+    border: 10px;
     background-color: #a8d8a8;
+
 }
 
 .content {
-    display: block;
-    justify-content: center;
+    display: flex;
     align-items: center;
     margin-top: 20px;
     background-color: #a8d8a8;
 }
 
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    gap: 10px;
+}
+
 ul {
-    list-style-type: none;
+    list-style-type: decimal;
     padding: 10px;
 }
 
 li {
+    background-color: #c9ee72;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #251e1e;
     margin: 5px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-button {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: rgb(243, 243, 243);
-    border: none;
-    cursor: pointer;
-}
-
 button:hover {
-    background-color: #45a049;
+    background-color: #2d352e;
 }
 
 .edit-btn {
-    background-color: #ffa500;
+    background-color: #2a5ae0;
 }
 
 .edit-btn:hover {
-    background-color: #e68900;
+    background-color: #ec0707;
 }
 
-.task-input {
-    width: 80%;
-    padding: 5px;
+#taskInput {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.task-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80 px;
+    background-color: lightgreen;
+}
+
+.task-list-content {
+    list-style-type: none;
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
